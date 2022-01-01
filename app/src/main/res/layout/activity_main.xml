@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#030D5F"
+    android:fadeScrollbars="false"
+    android:focusable="auto"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="5"
+        android:text="08852"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/celciusButton"
+        app:layout_constraintStart_toEndOf="@+id/fahrenheitButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/threeHourDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/threeHourImage"
+        app:layout_constraintStart_toStartOf="@+id/threeHourImage"
+        app:layout_constraintTop_toBottomOf="@+id/threeHourImage" />
+
+    <TextView
+        android:id="@+id/sixHourDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/sixHourImage"
+        app:layout_constraintStart_toStartOf="@+id/sixHourImage"
+        app:layout_constraintTop_toBottomOf="@+id/sixHourImage" />
+
+    <TextView
+        android:id="@+id/nineHourDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/nineHourImage"
+        app:layout_constraintStart_toStartOf="@+id/nineHourImage"
+        app:layout_constraintTop_toBottomOf="@+id/nineHourImage" />
+
+    <TextView
+        android:id="@+id/twelveHourDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/twelveHourImage"
+        app:layout_constraintStart_toStartOf="@+id/twelveHourImage"
+        app:layout_constraintTop_toBottomOf="@+id/twelveHourImage" />
+
+    <TextView
+        android:id="@+id/fifteenHourDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/fifteenHourImage"
+        app:layout_constraintStart_toStartOf="@+id/fifteenHourImage"
+        app:layout_constraintTop_toBottomOf="@+id/fifteenHourImage" />
+
+    <ImageView
+        android:id="@+id/threeHourImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="92dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/nineHourImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="92dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fifteenHourImage"
+        app:layout_constraintStart_toEndOf="@+id/threeHourImage"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/twelveHourImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="92dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fifteenHourImage"
+        app:layout_constraintStart_toEndOf="@+id/nineHourImage"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/fifteenHourImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="92dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/sixHourImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="92dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nineHourImage"
+        app:layout_constraintStart_toEndOf="@+id/threeHourImage"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/currentWeatherImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.461"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/threeHourTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/threeHourImage"
+        app:layout_constraintEnd_toEndOf="@+id/threeHourImage"
+        app:layout_constraintStart_toStartOf="@+id/threeHourImage" />
+
+    <TextView
+        android:id="@+id/sixHourTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/sixHourImage"
+        app:layout_constraintEnd_toEndOf="@+id/sixHourImage"
+        app:layout_constraintStart_toStartOf="@+id/sixHourImage" />
+
+    <TextView
+        android:id="@+id/currentTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/currentDateText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/currentDateText"
+        app:layout_constraintTop_toBottomOf="@+id/currentDateText" />
+
+    <TextView
+        android:id="@+id/twelveHourTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/twelveHourImage"
+        app:layout_constraintEnd_toEndOf="@+id/twelveHourImage"
+        app:layout_constraintStart_toStartOf="@+id/twelveHourImage" />
+
+    <TextView
+        android:id="@+id/fifteenHourTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/fifteenHourImage"
+        app:layout_constraintEnd_toEndOf="@+id/fifteenHourImage"
+        app:layout_constraintStart_toStartOf="@+id/fifteenHourImage" />
+
+    <Button
+        android:id="@+id/fahrenheitButton"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:text="°F"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/celciusButton"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:text="°C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/quoteText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/currentTemperatureText"
+        app:layout_constraintEnd_toEndOf="@+id/currentTemperatureText"
+        app:layout_constraintStart_toStartOf="@+id/currentTemperatureText" />
+
+    <TextView
+        android:id="@+id/currentDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/currentWeatherImage"
+        app:layout_constraintStart_toStartOf="@+id/currentWeatherImage"
+        app:layout_constraintTop_toBottomOf="@+id/currentWeatherImage" />
+
+    <TextView
+        android:id="@+id/currentTemperatureText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/currentWeatherText"
+        app:layout_constraintEnd_toEndOf="@+id/currentWeatherText"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/currentWeatherText" />
+
+    <TextView
+        android:id="@+id/nineHourTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/nineHourImage"
+        app:layout_constraintEnd_toEndOf="@+id/nineHourImage"
+        app:layout_constraintStart_toStartOf="@+id/nineHourImage" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:text="Search"
+        app:layout_constraintEnd_toEndOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <TextView
+        android:id="@+id/threeHourTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/threeHourDate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/threeHourDate"
+        app:layout_constraintTop_toBottomOf="@+id/threeHourDate" />
+
+    <TextView
+        android:id="@+id/sixHourTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/sixHourDate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/sixHourDate"
+        app:layout_constraintTop_toBottomOf="@+id/sixHourDate" />
+
+    <TextView
+        android:id="@+id/nineHourTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/nineHourDate"
+        app:layout_constraintStart_toStartOf="@+id/nineHourDate"
+        app:layout_constraintTop_toBottomOf="@+id/nineHourDate" />
+
+    <TextView
+        android:id="@+id/twelveHourTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/twelveHourDate"
+        app:layout_constraintStart_toStartOf="@+id/twelveHourDate"
+        app:layout_constraintTop_toBottomOf="@+id/twelveHourDate" />
+
+    <TextView
+        android:id="@+id/fifteenHourTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/fifteenHourDate"
+        app:layout_constraintStart_toStartOf="@+id/fifteenHourDate"
+        app:layout_constraintTop_toBottomOf="@+id/fifteenHourDate" />
+
+    <TextView
+        android:id="@+id/currentWeatherText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/currentWeatherImage"
+        app:layout_constraintEnd_toEndOf="@+id/currentWeatherImage"
+        app:layout_constraintStart_toStartOf="@+id/currentWeatherImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
