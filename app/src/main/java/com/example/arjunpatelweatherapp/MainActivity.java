@@ -167,7 +167,36 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        celcius.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    currentTemperature.setText(kelvinToCelcius(currentData.getJSONObject("main").get("temp").toString()));
+                    threeHourTemperature.setText(kelvinToCelcius(forecastData.getJSONArray("list").getJSONObject(0).getJSONObject("main").get("temp").toString()));
+                    sixHourTemperature.setText(kelvinToCelcius(forecastData.getJSONArray("list").getJSONObject(1).getJSONObject("main").get("temp").toString()));
+                    nineHourTemperature.setText(kelvinToCelcius(forecastData.getJSONArray("list").getJSONObject(2).getJSONObject("main").get("temp").toString()));
+                    twelveHourTemperature.setText(kelvinToCelcius(forecastData.getJSONArray("list").getJSONObject(3).getJSONObject("main").get("temp").toString()));
+                    fifteenHourTemperature.setText(kelvinToCelcius(forecastData.getJSONArray("list").getJSONObject(4).getJSONObject("main").get("temp").toString()));
+                } catch(Exception e){
 
+                }
+            }
+        });
+        fahrenheit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    currentTemperature.setText(kelvinToFahrenheit(currentData.getJSONObject("main").get("temp").toString()));
+                    threeHourTemperature.setText(kelvinToFahrenheit(forecastData.getJSONArray("list").getJSONObject(0).getJSONObject("main").get("temp").toString()));
+                    sixHourTemperature.setText(kelvinToFahrenheit(forecastData.getJSONArray("list").getJSONObject(1).getJSONObject("main").get("temp").toString()));
+                    nineHourTemperature.setText(kelvinToFahrenheit(forecastData.getJSONArray("list").getJSONObject(2).getJSONObject("main").get("temp").toString()));
+                    twelveHourTemperature.setText(kelvinToFahrenheit(forecastData.getJSONArray("list").getJSONObject(3).getJSONObject("main").get("temp").toString()));
+                    fifteenHourTemperature.setText(kelvinToFahrenheit(forecastData.getJSONArray("list").getJSONObject(4).getJSONObject("main").get("temp").toString()));
+                } catch(Exception e){
+
+                }
+            }
+        });
     }
 
     public class ZipCoder extends AsyncTask<String, Void, Void>{
